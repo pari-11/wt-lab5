@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Student Portal</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="portal-card">
+
+            <h1>Welcome to Student Portal</h1>
+
+            <div class="prn-box">
+                <strong>PRN:</strong>
+                <span th:text="${prn}"></span>
+            </div>
+
+            <h2>Student Results</h2>
+
+            <p>View your academic performance and examination results.</p>
+
+            <a class="result-button"
+               th:href="@{/result/{prn}(prn=${prn})}">
+                View Results
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

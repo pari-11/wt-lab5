@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+/* Common container */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* Login page */
+
+.login-container {
+    width: 90%;
+    max-width: 420px;
+    margin: 100px auto;
+}
+
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.login-card h1 {
+    margin-top: 0;
+    text-align: center;
+    color: #1f3c88;
+}
+
+.login-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #444;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #1f3c88;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #1f3c88;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #162d68;
+}
+
+.error {
+    background: #ffe5e5;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Portal */
+
+.portal-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.portal-card h1 {
+    color: #1f3c88;
+}
+
+.prn-box {
+    background: #eef3ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.result-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1f3c88;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.result-button:hover {
+    background: #162d68;
+}
+
+/* Results */
+
+.result-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.result-card h1 {
+    text-align: center;
+    color: #1f3c88;
+}
+
+.student-info {
+    background: #eef3ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 25px 0;
+}
+
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.results-table th,
+.results-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.results-table th {
+    background: #1f3c88;
+    color: white;
+}
+
+.results-table tr:hover {
+    background: #f5f7fc;
+}
+
+.summary {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f4f7fb;
+    border-radius: 8px;
+}
+
+.summary p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #555;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.back-button:hover {
+    background: #333;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .login-card,
+    .portal-card,
+    .result-card {
+        padding: 25px;
+    }
+
+    .results-table th,
+    .results-table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

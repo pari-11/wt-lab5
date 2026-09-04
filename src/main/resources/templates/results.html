@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Student Result</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="result-card">
+
+            <h1>VIT Student Result</h1>
+
+            <div class="student-info">
+
+                <h2 th:text="${student.name}"></h2>
+
+                <p>
+                    <strong>PRN:</strong>
+                    <span th:text="${student.prn}"></span>
+                </p>
+
+            </div>
+
+            <h2>Academic Results</h2>
+
+            <table class="results-table">
+
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Final Marks</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td th:text="${student.subject1}"></td>
+                        <td th:text="${student.subject1Final}"></td>
+                    </tr>
+
+                    <tr>
+                        <td th:text="${student.subject2}"></td>
+                        <td th:text="${student.subject2Final}"></td>
+                    </tr>
+
+                    <tr>
+                        <td th:text="${student.subject3}"></td>
+                        <td th:text="${student.subject3Final}"></td>
+                    </tr>
+
+                    <tr>
+                        <td th:text="${student.subject4}"></td>
+                        <td th:text="${student.subject4Final}"></td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="summary">
+
+                <p>
+                    Total Marks:
+                    <span th:text="${student.totalMarks}"></span>
+                    / 400
+                </p>
+
+                <p>
+                    Percentage:
+                    <span th:text="${student.percentage}"></span>%
+                </p>
+
+            </div>
+
+            <a class="back-button" th:href="@{/student/{prn}(prn=${student.prn})}">
+                Back to Portal
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
